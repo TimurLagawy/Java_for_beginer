@@ -30,7 +30,7 @@ float premium=0.2f;
         {
             System.out.println("NNNN получает " + ((pre_sal + sal) * 12 + (pre_sal + sal) * 4 * premium) + "рублей в год.");
 *///ввод данных
-        Scanner in=new Scanner(System.in);
+        /*Scanner in=new Scanner(System.in);
         System.out.println("Input your name ");
         String name = in.nextLine();
         System.out.println("Input your age ");
@@ -39,7 +39,24 @@ float premium=0.2f;
         System.out.println("Your name is " + name);
         System.out.println("Your age is " + age);
         in.close();
+*/class Base {
+            void method(int a) {
+                System.out.println("Base class with integer a = "+a);
+            }
+            void method(double d) {
+                System.out.println("Base class with double d = "+d);
+            }
+        }
 
+        class Child extends Base {
+            @Override
+            void method(double d) {
+                System.out.println("Child class with double d = "+d);
+            }
+        }
 
-    }
-}
+        public class Main {
+            public static void main(String[] args) {
+                new Child().method(100);
+            }
+        }}}
