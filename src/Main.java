@@ -39,24 +39,13 @@ float premium=0.2f;
         System.out.println("Your name is " + name);
         System.out.println("Your age is " + age);
         in.close();
-*/class Base {
-            void method(int a) {
-                System.out.println("Base class with integer a = "+a);
-            }
-            void method(double d) {
-                System.out.println("Base class with double d = "+d);
-            }
-        }
+*/
+//mini calculator
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите первое число: ");
+        Float num1 = scanner.nextFloat();
+        System.out.println("Введите второе число: ");
+        Float num2 = scanner.nextFloat();
 
-        class Child extends Base {
-            @Override
-            void method(double d) {
-                System.out.println("Child class with double d = "+d);
-            }
-        }
-
-        public class Main {
-            public static void main(String[] args) {
-                new Child().method(100);
-            }
-        }}}
+        System.out.println("Сумма составит:  " + (num1 + num2) + "\n" + "Разница составит:  " + (num1 - num2) + "\n" + "Произведение составит:" + num1 * num2 + "\n" + "Частное составит: " + num1 / num2  );
+    }}
