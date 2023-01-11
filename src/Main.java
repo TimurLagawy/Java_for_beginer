@@ -41,11 +41,24 @@ float premium=0.2f;
         in.close();
 */
 //mini calculator
-        Scanner scanner = new Scanner(System.in);
+      /*  Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое число: ");
         Float num1 = scanner.nextFloat();
         System.out.println("Введите второе число: ");
         Float num2 = scanner.nextFloat();
 
         System.out.println("Сумма составит:  " + (num1 + num2) + "\n" + "Разница составит:  " + (num1 - num2) + "\n" + "Произведение составит:" + num1 * num2 + "\n" + "Частное составит: " + num1 / num2  );
+    }}
+*/Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите первое число: ");
+        Float num1 = scanner.nextFloat();
+        System.out.println("Введите второе число: ");
+        Float num2 = scanner.nextFloat();
+        Float res1 = num1 + num2;
+        Float res2 = num1 - num2;
+        Float res3 = num1 * num2;
+        Float res4 = num1 / num2;
+
+
+        System.out.println("Сумма составит:  " + res1 + "\n" + "Разница составит:  " + res2 + "\n" + "Произведение составит:" + res3 + "\n" + "Частное составит: " + res4);
     }}
