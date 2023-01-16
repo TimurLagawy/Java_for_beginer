@@ -49,7 +49,8 @@ float premium=0.2f;
 
         System.out.println("Сумма составит:  " + (num1 + num2) + "\n" + "Разница составит:  " + (num1 - num2) + "\n" + "Произведение составит:" + num1 * num2 + "\n" + "Частное составит: " + num1 / num2  );
     }}
-*/Scanner scanner = new Scanner(System.in);
+*/
+        /*Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое число: ");
         Float num1 = scanner.nextFloat();
         System.out.println("Введите второе число: ");
@@ -61,4 +62,60 @@ float premium=0.2f;
 
 
         System.out.println("Сумма составит:  " + res1 + "\n" + "Разница составит:  " + res2 + "\n" + "Произведение составит:" + res3 + "\n" + "Частное составит: " + res4);
+    }}
+*/
+//условные конструкции if-else
+/*int a= 13;
+int b = 24;
+if (a == b) {
+    System.out.println("да, верно");
+}else {
+    System.out.println("нет, не верно");
+       }
+    }
+}
+*//*
+        char sym1='A';
+        char sym2='B';
+        if (sym1 == sym2) {
+            System.out.println("да, верно");
+        }else {
+            System.out.println("нет, не верно");
+        }
+    }
+}*/
+//массивы
+       /* int mass[] = new int[10];
+        mass[0] = 2;
+        mass[1] = 9;
+        mass[2] = 7;
+        mass[3] = 4;
+        mass[4] = 9;
+        mass[5] = 2;
+        mass[6] = -3;
+        mass[7] = 8;
+        mass[8] = 4;
+        mass[9] = 1;
+
+        System.out.println("minimal numerous");
+int min =mass[0];
+        for (int i = 0; i < 10; i++) {
+            if (mass[i] < min)
+            min= mass[i];
+
+        }System.out.println(min + "=minimum");
+    }}
+            */
+        int[] mass = new int[6];
+        mass[0] = 10;
+        mass[1] = 120;
+        mass[2] = 101;
+        mass[3] = 160;
+        mass[4] = 1087;
+        mass[5] = 103;
+        for (int i = 0; i < mass.length; i++) {
+
+
+        System.out.println(mass[i] + " ");
+    }
     }}
