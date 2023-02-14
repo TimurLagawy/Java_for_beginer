@@ -115,9 +115,7 @@ int min =mass[0];
         mass[5] = 103;
         for (int i = 0; i < mass.length; i++) {
 
-
         System.out.println(mass[i] + " ");*/
-
 
                 Scanner scanner = new Scanner(System.in);
                 System.out.println("Enter first number:");
