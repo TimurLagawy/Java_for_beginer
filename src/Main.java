@@ -106,7 +106,7 @@ int min =mass[0];
         }System.out.println(min + "=minimum");
     }}
             */
-        int[] mass = new int[6];
+        /*int[] mass = new int[6];
         mass[0] = 10;
         mass[1] = 120;
         mass[2] = 101;
@@ -116,6 +116,37 @@ int min =mass[0];
         for (int i = 0; i < mass.length; i++) {
 
 
-        System.out.println(mass[i] + " ");
-    }
-    }}
+        System.out.println(mass[i] + " ");*/
+
+
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Enter first number:");
+                double num1 = scanner.nextDouble();
+                System.out.println("Enter second number:");
+                double num2 = scanner.nextDouble();
+                System.out.println("Enter an operator (+, -, *, /):");
+                char operator = scanner.next().charAt(0);
+                double result;
+
+                switch (operator) {
+                    case '+':
+                        result = num1 + num2;
+                        break;
+                    case '-':
+                        result = num1 - num2;
+                        break;
+                    case '*':
+                        result = num1 * num2;
+                        break;
+                    case '/':
+                        result = num1 / num2;
+                        break;
+                    default:
+                        System.out.println("Error! Operator is not correct");
+                        return;
+                }
+
+                System.out.println("Result: " + result);
+            }
+        }
+
