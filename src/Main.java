@@ -145,7 +145,6 @@ int min =mass[0];
                         System.out.println("Error! Operator is not correct");
                         return;
                 }
-
                 System.out.println("Result: " + result);
             }
         }
